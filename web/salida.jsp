@@ -33,11 +33,13 @@
                 <tr>
                     <td><%=((Aspirante) Aspirante.listaA.get(i)).getNombre()%></td>
                     <td><%=((Aspirante) Aspirante.listaA.get(i)).getMaterias()%></td>
+                    <td><%=((Aspirante) Aspirante.listaA.get(i)).getFecha()%></td>
                 </tr>
                 <%}%>
         </table>
         
-        <input class="button" type="button" onclick="" value="Volver">
+        <input class="button" type="button" onclick="history.back()" value="Volver">
+        
         
         <footer>
             <p>&copy; Copyright 2023. Diseñado Karen Alarcón, Santiago Alfonso y Jhon Gonzalez &#124 Bogotá - Colombia</p>
