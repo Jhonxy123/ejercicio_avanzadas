@@ -5,7 +5,7 @@ body{
     place-items: center;
 }
 
-header,form,footer{
+header,form,footer,table{
     background-color: white;
     border-style: 1;
     margin: 10px;
@@ -27,6 +27,26 @@ h1{
     color:white;
 }
 
+table{
+    display: grid;
+    place-items: center;
+}
 
+th,td{
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
 
+tr{
+    background-color: #f2f2f2;
+}
+
+th{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #2144DF;
+    color:white;
+}
 

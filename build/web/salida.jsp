@@ -20,29 +20,27 @@
     </head>
     <body>
         <header>
-            <h1>Su Registro ha exitoso!</h1>  
-
+            <h1> Su Registro ha sido exitoso!</h1>  
         </header>
         <table>
             <tr>
-                <td> Nombre: </td>
-                <td><% 
-               
-                    for(int i=0;i<Aspirante.listaA.size();i++){
-                    %>
-                    <ul>
-                        <li><%=((Aspirante) Aspirante.listaA.get(i)).getNombre()%></li>
-                    </ul>
-                    <ul>
-                        <li><%=((Aspirante) Aspirante.listaA.get(i)).getMaterias()%></li>
-                    </ul>
-                    <%}%>
-                </td>
+                <th> Nombre </th>
+                <th> Cursos </th>
+                <th> Fecha de inscripción </th>
             </tr>
-            
-
+            <% for(int i=0;i<Aspirante.listaA.size();i++){
+                %>
+                <tr>
+                    <td><%=((Aspirante) Aspirante.listaA.get(i)).getNombre()%></td>
+                    <td><%=((Aspirante) Aspirante.listaA.get(i)).getMaterias()%></td>
+                </tr>
+                <%}%>
         </table>
-
-
+        
+        <input class="button" type="button" onclick="" value="Volver">
+        
+        <footer>
+            <p>&copy; Copyright 2023. Diseñado Karen Alarcón, Santiago Alfonso y Jhon Gonzalez &#124 Bogotá - Colombia</p>
+        </footer>
     </body>
 </html>
